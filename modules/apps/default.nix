@@ -109,6 +109,7 @@ in
     moonlight-qt
     sunshine
     steam
+    safeeyes
   ];
   
   services.udisks2.enable = true;
