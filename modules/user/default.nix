@@ -12,12 +12,9 @@
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.fish;
     packages = with pkgs; [
-      google-cursor
       gnome-themes-extra
-      dconf
       adwaita-icon-theme
       xdg-user-dirs
-      cherry
       tela-circle-icon-theme
     ];
   };

@@ -47,7 +47,7 @@
     nerd-fonts.hack
     roboto
     inter
-    inputs.apple-fonts.packages.${pkgs.system}.sf-pro
-    inputs.product-sans-font.packages.${pkgs.system}.default
+    inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro
+    inputs.product-sans-font.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

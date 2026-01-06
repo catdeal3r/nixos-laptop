@@ -4,7 +4,7 @@
 let
 
   pkgs-stable = import inputs.nixpkgs-stable {
-    system = pkgs.system;
+    system = pkgs.stdenv.hostPlatform.system;
     config.allowUnfree = true;
   };
 
@@ -98,9 +98,9 @@ in
     vital
     helm
     stirling-pdf
-    inputs.prism-cracked.packages.${pkgs.system}.default
-    inputs.idescriptor.packages.${pkgs.system}.default
-    #inputs.legacyLauncher.packages.${pkgs.system}.legacylauncher
+    inputs.prism-cracked.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.idescriptor.packages.${pkgs.stdenv.hostPlatform.system}.default
+    #inputs.legacyLauncher.packages.${pkgs.stdenv.hostPlatform.system}.legacylauncher
     kdePackages.kdenlive
     ifuse
     libimobiledevice
