@@ -113,6 +113,8 @@ in
     tailscale 
   ];
   
+  services.tailscale.enable = true;
+  
   services.udisks2.enable = true;
   services.gvfs.enable = true;
   services.avahi.enable = true;
