@@ -110,6 +110,7 @@ in
     sunshine
     steam
     safeeyes
+    tailscale 
   ];
   
   services.udisks2.enable = true;
