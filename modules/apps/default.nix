@@ -111,6 +111,7 @@ in
     steam
     safeeyes
     tailscale 
+    spotube
   ];
   
   services.tailscale.enable = true;
