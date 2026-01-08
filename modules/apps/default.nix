@@ -112,6 +112,7 @@ in
     safeeyes
     tailscale 
     samba4Full
+    cifs-utils
   ];
   
   services.tailscale.enable = true;
