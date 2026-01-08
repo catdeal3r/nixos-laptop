@@ -113,6 +113,7 @@ in
     tailscale 
     samba4Full
     cifs-utils
+    nuclear
   ];
   
   services.tailscale.enable = true;
