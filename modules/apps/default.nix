@@ -115,6 +115,7 @@ in
     cifs-utils
     nuclear
     docker
+    pwgen
   ];
   
   services.tailscale.enable = true;
