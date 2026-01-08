@@ -114,6 +114,7 @@ in
     samba4Full
     cifs-utils
     nuclear
+    docker
   ];
   
   services.tailscale.enable = true;
