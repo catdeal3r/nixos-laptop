@@ -111,8 +111,7 @@ in
     steam
     safeeyes
     tailscale 
-    smbclient
-    samba
+    samba4Full
   ];
   
   services.tailscale.enable = true;
