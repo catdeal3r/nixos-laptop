@@ -107,7 +107,6 @@ in
     davinci-resolve
     moonlight-qt
     sunshine
-    steam
     safeeyes
     tailscale 
     samba4Full
