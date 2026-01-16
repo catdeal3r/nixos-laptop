@@ -14,6 +14,14 @@
 
     # location dirs and mime types
     xdg = {
+      userDirs = {
+        enable = true;
+        pictures = "/home/catdealer/Pictures";
+        documents = "/home/catdealer/Documents";
+        music = "/home/catdealer/Music";
+        videos = "/home/catdealer/Videos";
+      };
+      
       mimeApps = {
         enable = true;
         
@@ -61,37 +69,37 @@
       };
     };
 
-    gtk = {
-      enable = true;
-      
-      iconTheme = {
-        name = "Tela-circle";
-        package = pkgs.tela-circle-icon-theme;
-      };
-      
-      font = {
-        name = "SF Pro Display";
-        package = inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro;
-      };
-
-      cursorTheme = {
-        name = "McMojave";
-        package = inputs.mcmojave-cursor.packages.${pkgs.stdenv.hostPlatform.system}.default; 
-      };
+    #gtk = {
+    #  enable = true;
+    #  
+    #  iconTheme = {
+    #    name = "Tela-circle";
+    #    package = pkgs.tela-circle-icon-theme;
+    #  };
+    #  
+    #  font = {
+    #    name = "SF Pro Display";
+    #    package = inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro;
+    #  };
+    #
+    #  cursorTheme = {
+    #    name = "McMojave";
+    #    package = inputs.mcmojave-cursor.packages.${pkgs.stdenv.hostPlatform.system}.default; 
+    #  };
 
       #theme = {
       #  name = "Orchis-Grey-Dark";
       #  package = pkgs.orchis-theme.override { tweaks = [ "solid" "black" "macos" ]; };
       #};
-    };
+    #};
     
-    home.pointerCursor = {
-      enable = true;
-      name = "McMojave";
-      package = inputs.mcmojave-cursor.packages.${pkgs.stdenv.hostPlatform.system}.default;
-      gtk.enable = true;
-      x11.enable = true;
-    };
+   # home.pointerCursor = {
+   #   enable = true;
+   #   name = "McMojave";
+   #   package = inputs.mcmojave-cursor.packages.${pkgs.stdenv.hostPlatform.system}.default;
+   #   gtk.enable = true;
+   #   x11.enable = true;
+   # };
    
     home.stateVersion = "25.05";
   };
