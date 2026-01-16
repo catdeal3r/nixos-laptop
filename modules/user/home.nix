@@ -14,14 +14,6 @@
 
     # location dirs and mime types
     xdg = {
-      userDirs = {
-        enable = true;
-        pictures = "/run/media/catdealer/Data/Pictures";
-        documents = "/run/media/catdealer/Data/Documents";
-        music = "/run/media/catdealer/Data/Music";
-        videos = "/run/media/catdealer/Data/Videos";
-      };
-
       mimeApps = {
         enable = true;
         

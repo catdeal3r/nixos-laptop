@@ -78,7 +78,6 @@ in
     ghidra
     gdb
     glow
-    gnome-boxes
     dnsmasq
     equibop
     xsel
