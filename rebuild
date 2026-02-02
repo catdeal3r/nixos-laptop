@@ -9,7 +9,7 @@ if [[ $1 == "-u" ]]; then
 else
   time=$(($(date +%s)-$(stat --format +%Y flake.lock)))
   if [[ $time -gt $((1 * 7 * 24 * 60 * 60)) ]]; then
-    echo "[!] Warning: available packages are older than 1.5 weeks. Run rebuild with '-u' to update packages."
+    echo "[!] Warning: available packages are older than 1 weeks. Run rebuild with '-u' to update packages."
   fi
   sudo nixos-rebuild --flake .# switch
 fi
