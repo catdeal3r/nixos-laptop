@@ -72,11 +72,12 @@
 
     gtk = {
       enable = true;
-    #  
-    #  iconTheme = {
-    #    name = "Tela-circle";
-    #    package = pkgs.tela-circle-icon-theme;
-    #  };
+      gtk2.force = true;
+      
+      iconTheme = {
+        name = "Tela-circle";
+        package = pkgs.tela-circle-icon-theme;
+      };
     #  
     #  font = {
     #    name = "SF Pro Display";
