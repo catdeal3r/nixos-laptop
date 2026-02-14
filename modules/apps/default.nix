@@ -114,6 +114,7 @@ in
     nuclear
     docker
     pwgen
+    tor-browser
   ];
   
   services.tailscale.enable = true;
