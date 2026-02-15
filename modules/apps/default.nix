@@ -115,6 +115,7 @@ in
     docker
     pwgen
     tor-browser
+    status-im
   ];
   
   services.tailscale.enable = true;
