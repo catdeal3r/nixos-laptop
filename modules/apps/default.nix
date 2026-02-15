@@ -97,7 +97,7 @@ in
     vital
     helm
     stirling-pdf
-    inputs.prism-cracked.packages.${pkgs.stdenv.hostPlatform.system}.default
+    #inputs.prism-cracked.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.idescriptor.packages.${pkgs.stdenv.hostPlatform.system}.default
     #inputs.legacyLauncher.packages.${pkgs.stdenv.hostPlatform.system}.legacylauncher
     kdePackages.kdenlive
