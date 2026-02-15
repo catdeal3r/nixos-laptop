@@ -116,6 +116,7 @@ in
     pwgen
     tor-browser
     status-im
+    nodejs_25
   ];
   
   services.tailscale.enable = true;
