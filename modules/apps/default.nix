@@ -115,8 +115,8 @@ in
     docker
     pwgen
     tor-browser
-    status-im
     nodejs_25
+    element-desktop
   ];
   
   services.tailscale.enable = true;
