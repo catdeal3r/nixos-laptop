@@ -125,6 +125,7 @@ in
   services.gvfs.enable = true;
   services.avahi.enable = true;
   services.usbmuxd.enable = true;
+  services.usbmuxd.package = pkgs.usbmuxd2;
 
   virtualisation.libvirtd.enable = true;
 
