@@ -116,7 +116,7 @@ in
     pwgen
     tor-browser
     nodejs_25
-    element-desktop
+    steam
   ];
   
   services.tailscale.enable = true;
