@@ -109,7 +109,7 @@ in
     sunshine
     safeeyes
     tailscale 
-    samba4Full
+    #samba4Full
     cifs-utils
     nuclear
     docker
