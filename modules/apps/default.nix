@@ -12,7 +12,6 @@ in
 {
 
   imports = [
-    ./quickshell.nix
     ./flatpak.nix
   ];
   
@@ -45,7 +44,6 @@ in
     gnat15
     raylib
     libGL
-    vlc
     htop
     libreoffice
     ungoogled-chromium
@@ -100,8 +98,40 @@ in
     tor-browser
     nodejs_25
     steam
+    foot
+    xwayland-satellite
+    swaybg
+    swayidle
+    slurp
+    grim
+    wofi
+    matugen
+    nautilus
+    libnotify
+    wl-clipboard
+    glib
+    lxsession
+    gtk3
+    gtk4
+    brightnessctl
+    pulseaudio
+    mpvpaper
+    wf-recorder
+    gammastep
+    # fonts
+    material-icons
+    material-symbols
+    nerd-fonts.hack
+    roboto
+    inter
+    # try to fix gtk monke ass ahh file picker
+    xdg-user-dirs-gtk
+    xdg-desktop-portal-gtk
+    gsettings-desktop-schemas
+    dconf-editor
+    dconf
   ];
-  
+
   services.tailscale.enable = true;
   
   services.udisks2.enable = true;
@@ -111,11 +141,19 @@ in
   services.usbmuxd.package = pkgs.usbmuxd2;
 
   virtualisation.libvirtd.enable = true;
+  programs.dconf.enable = true;
 
   users.groups.libvirtd.members = [ "catdealer" ];
   users.groups.kvm.members = [ "catdealer" ];
 
   fonts.packages = with pkgs; [
     minecraftia
+    material-symbols
+    material-icons
+    nerd-fonts.hack
+    roboto
+    inter
+    #inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro
+    inputs.product-sans-font.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
