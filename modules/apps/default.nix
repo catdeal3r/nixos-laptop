@@ -27,7 +27,6 @@ in
     fish
     flatpak
     krita
-    gimp
     opentabletdriver
     mpv
     ffmpeg
@@ -38,7 +37,6 @@ in
     playerctl
     firefox
     udisks
-    geany
     feh
     cava
     mlocate
@@ -49,7 +47,6 @@ in
     libGL
     vlc
     htop
-    vscodium
     libreoffice
     ungoogled-chromium
     libinput
@@ -66,7 +63,6 @@ in
     gparted
     pandoc
     texliveTeTeX
-    fox
     tty-clock
     waybar
     imagemagick
@@ -75,43 +71,30 @@ in
     python313
     python313Packages.pip
     viewnior
-    ghidra
     gdb
     glow
     dnsmasq
     equibop
     xsel
-    ngrok
     php
-    openvpn
-    lunar-client
     prismlauncher
     gnome-calculator
     gnome-clocks
-    sherlock-launcher
-    proxychains
     fuse3
     btop
-    godot
-    reaper
-    vital
-    helm
     stirling-pdf
     #inputs.prism-cracked.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.idescriptor.packages.${pkgs.stdenv.hostPlatform.system}.default
     #inputs.legacyLauncher.packages.${pkgs.stdenv.hostPlatform.system}.legacylauncher
-    kdePackages.kdenlive
     ifuse
     libimobiledevice
     yt-dlp
-    davinci-resolve
     moonlight-qt
     sunshine
     safeeyes
     tailscale 
     #samba4Full
     cifs-utils
-    nuclear
     docker
     pwgen
     tor-browser
