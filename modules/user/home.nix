@@ -14,6 +14,7 @@
 
     # location dirs and mime types
     xdg = {
+      setSessionVariables = true;
       userDirs = {
         enable = true;
         pictures = "/home/catdealer/Pictures";
@@ -73,6 +74,7 @@
     gtk = {
       enable = true;
       gtk2.force = true;
+      gtk4.theme = null;
       
       iconTheme = {
         name = "Tela-circle";
