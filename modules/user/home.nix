@@ -14,8 +14,8 @@
 
     # location dirs and mime types
     xdg = {
-      setSessionVariables = true;
       userDirs = {
+        setSessionVariables = true;
         enable = true;
         pictures = "/home/catdealer/Pictures";
         documents = "/home/catdealer/Documents";
