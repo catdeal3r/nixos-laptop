@@ -118,6 +118,7 @@ in
     mpvpaper
     wf-recorder
     gammastep
+    opencode
     # fonts
     material-icons
     material-symbols
