@@ -130,6 +130,8 @@ in
     gsettings-desktop-schemas
     dconf-editor
     dconf
+    podman
+    podman-compose
   ];
 
   services.tailscale.enable = true;
