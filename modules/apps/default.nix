@@ -142,6 +142,7 @@ in
   services.usbmuxd.package = pkgs.usbmuxd2;
 
   virtualisation.libvirtd.enable = true;
+  virtualisation.docker.enable = true;
   programs.dconf.enable = true;
 
   users.groups.libvirtd.members = [ "catdealer" ];
