@@ -9,7 +9,7 @@
     isNormalUser = true;
     description = "catdeal3r";
     initialPassword = "12345";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.fish;
     packages = with pkgs; [
       gnome-themes-extra

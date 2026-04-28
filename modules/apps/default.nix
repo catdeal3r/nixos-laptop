@@ -93,7 +93,6 @@ in
     tailscale 
     #samba4Full
     cifs-utils
-    docker
     pwgen
     tor-browser
     nodejs_25
@@ -142,11 +141,16 @@ in
   services.usbmuxd.package = pkgs.usbmuxd2;
 
   virtualisation.libvirtd.enable = true;
-  virtualisation.docker.enable = true;
   programs.dconf.enable = true;
 
   users.groups.libvirtd.members = [ "catdealer" ];
   users.groups.kvm.members = [ "catdealer" ];
+
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+    defaultNetwork.settings.dns_enabled = true;
+  };
 
   fonts.packages = with pkgs; [
     minecraftia
