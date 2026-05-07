@@ -132,6 +132,7 @@ in
     dconf
     podman
     podman-compose
+    darktable
   ];
 
   services.tailscale.enable = true;
