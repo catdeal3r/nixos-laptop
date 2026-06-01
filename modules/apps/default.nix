@@ -133,6 +133,7 @@ in
     podman
     podman-compose
     darktable
+    ollama
   ];
 
   services.tailscale.enable = true;
