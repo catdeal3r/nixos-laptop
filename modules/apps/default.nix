@@ -134,6 +134,7 @@ in
     podman-compose
     darktable
     ollama
+    mcp-cli
   ];
 
   services.tailscale.enable = true;
