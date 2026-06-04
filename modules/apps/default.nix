@@ -95,7 +95,7 @@ in
     cifs-utils
     pwgen
     tor-browser
-    nodejs_25
+    nodejs_26
     steam
     foot
     xwayland-satellite
