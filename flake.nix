@@ -2,7 +2,6 @@
   inputs = {
     nixpkgs.url = github:NixOs/nixpkgs/nixos-unstable;
     nixpkgs-stable.url = github:NixOs/nixpkgs/nixos-25.05;
-    #prism-cracked.url = github:Diegiwg/PrismLauncher-Cracked;
     quickshell = {
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,7 +19,7 @@
     mcmojave-cursor.url = github:catdeal3r/mcmojave-cursor-flake;
     product-sans-font.url = github:catdeal3r/product-sans-flake;
     idescriptor.url = github:catdeal3r/idescriptor-flake;
-    #legacyLauncher.url = github:catdeal3r/llauncher-flake;
+    iloader.url = github:nab138/iloader;
   };
 
   outputs = { nixpkgs, ... }@inputs: {

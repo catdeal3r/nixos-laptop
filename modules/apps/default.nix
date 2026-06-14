@@ -81,9 +81,6 @@ in
     fuse3
     btop
     stirling-pdf
-    #inputs.prism-cracked.packages.${pkgs.stdenv.hostPlatform.system}.default
-    inputs.idescriptor.packages.${pkgs.stdenv.hostPlatform.system}.default
-    #inputs.legacyLauncher.packages.${pkgs.stdenv.hostPlatform.system}.legacylauncher
     ifuse
     libimobiledevice
     yt-dlp
@@ -134,6 +131,8 @@ in
     podman-compose
     darktable
     ollama
+    inputs.idescriptor.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.iloader.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   services.tailscale.enable = true;
