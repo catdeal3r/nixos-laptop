@@ -133,6 +133,7 @@ in
     ollama
     inputs.idescriptor.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.iloader.packages.${pkgs.stdenv.hostPlatform.system}.default
+    cmatrix
   ];
 
   services.tailscale.enable = true;
