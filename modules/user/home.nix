@@ -8,6 +8,7 @@
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;    
+    backupFileExtension = "backup";
   };
 
   home-manager.users.catdealer = { pkgs, ... }: {
