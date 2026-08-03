@@ -134,6 +134,7 @@ in
     inputs.idescriptor.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.iloader.packages.${pkgs.stdenv.hostPlatform.system}.default
     cmatrix
+    ghidra
   ];
 
   services.tailscale.enable = true;
