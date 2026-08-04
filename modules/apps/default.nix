@@ -135,6 +135,7 @@ in
     inputs.iloader.packages.${pkgs.stdenv.hostPlatform.system}.default
     cmatrix
     ghidra
+    proxychains4
   ];
 
   services.tailscale.enable = true;
