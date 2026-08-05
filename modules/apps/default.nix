@@ -159,6 +159,9 @@ in
     defaultNetwork.settings.dns_enabled = true;
   };
 
+
+  services.windscribe.enable = true;
+
   fonts.packages = with pkgs; [
     minecraftia
     material-symbols

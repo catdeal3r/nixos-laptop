@@ -20,6 +20,10 @@
     product-sans-font.url = github:catdeal3r/product-sans-flake;
     idescriptor.url = github:catdeal3r/idescriptor-flake;
     iloader.url = github:nab138/iloader;
+    windscribe-nixos = {
+      url = "github:Varmisanth/windscribe-nixos";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { nixpkgs, ... }@inputs: {
