@@ -130,7 +130,7 @@ in
     podman
     podman-compose
     darktable
-    ollama
+    ollama4
     inputs.idescriptor.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.iloader.packages.${pkgs.stdenv.hostPlatform.system}.default
     cmatrix
@@ -160,7 +160,11 @@ in
   };
 
 
-  services.windscribe.enable = true;
+  inputs.windscribe-nixos.nixosModules.windscribe {
+    programs.windscribe = {
+      enable = true;
+    };
+  }
 
   fonts.packages = with pkgs; [
     minecraftia
