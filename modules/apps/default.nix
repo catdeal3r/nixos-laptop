@@ -160,11 +160,9 @@ in
   };
 
 
-  inputs.windscribe-nixos.nixosModules.windscribe {
-    programs.windscribe = {
-      enable = true;
-    };
-  }
+  programs.windscribe = {
+    enable = true;
+  };
 
   fonts.packages = with pkgs; [
     minecraftia

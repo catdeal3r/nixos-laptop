@@ -28,7 +28,10 @@
 
   outputs = { nixpkgs, ... }@inputs: {
     nixosConfigurations.hpnix = nixpkgs.lib.nixosSystem {
-      modules = [ ./modules ];
+      modules = [ 
+        inputs.windscribe-nixos.nixosModules.windscribe
+	./modules
+      ];
       specialArgs = { inherit inputs; };
     };
   };
