@@ -91,11 +91,6 @@
         name = "McMojave";
         package = inputs.mcmojave-cursor.packages.${pkgs.stdenv.hostPlatform.system}.default; 
       };
-
-      #theme = {
-      #  name = "Orchis-Grey-Dark";
-      #  package = pkgs.orchis-theme.override { tweaks = [ "solid" "black" "macos" ]; };
-      #};
     };
     
     home.pointerCursor = {

@@ -52,7 +52,6 @@ in
     unzip
     gnome-extension-manager
     commit-mono
-    orchis-theme
     stow
     helix  
     pkg-config
