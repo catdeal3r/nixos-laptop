@@ -158,10 +158,6 @@ in
   };
 
 
-  programs.windscribe = {
-    enable = true;
-  };
-
   fonts.packages = with pkgs; [
     minecraftia
     material-symbols
