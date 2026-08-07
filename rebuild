@@ -5,7 +5,7 @@ gen=$(date '+%a %-d %b %Y %I:%M:%S %p')
 sudo git commit -m "$gen"
 if [[ $1 == "-u" ]]; then
   sudo nix flake update
-  sudo nixos-rebuild --flake .# switch --upgrade
+  sudo nixos-rebuild --flake .# switch
 else
   time=$(($(date +%s)-$(stat --format +%Y flake.lock)))
   if [[ $time -gt $((1 * 7 * 24 * 60 * 60)) ]]; then
