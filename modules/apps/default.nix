@@ -18,11 +18,9 @@ in
   environment.systemPackages = with pkgs; [
     vim
     wget
-    tmux
     git
     gh
     fastfetch
-    tree
     fish
     flatpak
     krita
@@ -31,8 +29,6 @@ in
     ffmpeg
     zoxide
     yazi
-    tldr
-    cbonsai
     playerctl
     firefox
     udisks
@@ -42,7 +38,6 @@ in
     gvfs
     libgcc
     gnat15
-    raylib
     libGL
     htop
     libreoffice
@@ -61,9 +56,7 @@ in
     pandoc
     texliveTeTeX
     tty-clock
-    waybar
     imagemagick
-    ueberzugpp
     clipman
     python313
     python313Packages.pip
@@ -85,9 +78,7 @@ in
     yt-dlp
     moonlight-qt
     sunshine
-    safeeyes
     tailscale 
-    #samba4Full
     cifs-utils
     pwgen
     tor-browser
@@ -110,7 +101,6 @@ in
     gtk4
     brightnessctl
     pulseaudio
-    mpvpaper
     wf-recorder
     gammastep
     opencode
@@ -132,7 +122,6 @@ in
     inputs.idescriptor.packages.${pkgs.stdenv.hostPlatform.system}.default
     # monkes still havent fixed this
     # inputs.iloader.packages.${pkgs.stdenv.hostPlatform.system}.default
-    cmatrix
     ghidra
     proxychains
     macchanger
