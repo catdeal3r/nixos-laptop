@@ -125,6 +125,7 @@ in
     ghidra
     proxychains
     macchanger
+    throne
   ];
 
   services.tailscale.enable = true;
