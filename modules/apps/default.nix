@@ -126,6 +126,7 @@ in
     proxychains
     macchanger
     throne
+    warp-plus
   ];
 
   services.tailscale.enable = true;
