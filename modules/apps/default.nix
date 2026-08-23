@@ -126,7 +126,7 @@ in
     proxychains
     macchanger
     throne
-    warp-plus
+    torsocks
   ];
 
   services.tailscale.enable = true;
@@ -148,6 +148,21 @@ in
     dockerCompat = true;
     defaultNetwork.settings.dns_enabled = true;
   };
+
+  services.tor = {
+    enable = true;
+    client.enable = true;
+    settings = {
+      UseBridges = true;
+      SocksPort = 9050;
+      ClientTransportPlugin =
+        "snowflake exec ${pkgs.snowflake}/bin/client";
+      Bridge = [
+        "snowflake 192.0.2.3:80 2B280B23E1107BB62ABFC40DDCC8824814F80A72"
+      ];
+    };
+  };
+
 
 
   fonts.packages = with pkgs; [
