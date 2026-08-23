@@ -154,7 +154,6 @@ in
     client.enable = true;
     settings = {
       UseBridges = true;
-      SocksPort = 9050;
       ClientTransportPlugin =
         "snowflake exec ${pkgs.snowflake}/bin/client";
       Bridge = [
