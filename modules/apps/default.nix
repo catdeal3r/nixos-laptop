@@ -15,7 +15,19 @@ in
     ./flatpak.nix
   ];
   
-  nixpkgs.overlays = [ inputs.lightcraft.overlays.default ];
+  nixpkgs.overlays = [
+    inputs.lightcraft.overlays.default
+    (final: prev: {
+      lightcraft = prev.lightcraft.overrideAttrs (old: {
+        cargoDeps = final.rustPlatform.importCargoLock {
+          lockFile = "${old.src}/Cargo.lock";
+          outputHashes = {
+            "craft-ui-0.1.0" = "sha256-VhLeT7VLdZAIz6gR9PdFI34IJxHsGF8NE0uzFCN2vIU=";
+          };
+        };
+      });
+    })
+  ];
   environment.systemPackages = with pkgs; [
     vim
     wget
