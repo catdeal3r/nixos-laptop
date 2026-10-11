@@ -20,6 +20,7 @@
     product-sans-font.url = github:catdeal3r/product-sans-flake;
     idescriptor.url = github:catdeal3r/idescriptor-flake;
     iloader.url = github:nab138/iloader;
+    lightcraft.url = github:storytold/lightcraft;
   };
 
   outputs = { nixpkgs, ... }@inputs: {

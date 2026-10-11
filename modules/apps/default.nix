@@ -15,6 +15,7 @@ in
     ./flatpak.nix
   ];
   
+  nixpkgs.overlays = [ inputs.lightcraft.overlays.default ];
   environment.systemPackages = with pkgs; [
     vim
     wget
@@ -126,6 +127,7 @@ in
     proxychains
     macchanger
     throne
+    lightcraft
   ];
 
   services.tailscale.enable = true;
