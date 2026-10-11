@@ -17,6 +17,8 @@ in
 
   qt.enable = true;
 
+  services.displayManager.defaultSession = pkgs.lib.mkForce "plasma";
+
   services.displayManager.sddm = {
     #package = pkgs.kdePackages.sddm;
     enable = true;

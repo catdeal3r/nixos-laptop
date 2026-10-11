@@ -261,11 +261,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1791683879,
-        "narHash": "sha256-Y0kVow2rDs2E6nLXr+DA7//6tnydaBR83WUyUNqXYk4=",
+        "lastModified": 1791730949,
+        "narHash": "sha256-YMMzmDsTtREp9Nz4Qls8Sif7LfaOHc0bXl38CsBLwaQ=",
         "owner": "storytold",
         "repo": "lightcraft",
-        "rev": "0ba118de92a81f7463ca0e6d79e1323137b1adae",
+        "rev": "76b5377868d912db69a777bda253a5b1b96b22bd",
         "type": "github"
       },
       "original": {

@@ -139,7 +139,7 @@ in
     proxychains
     macchanger
     throne
-    lightcraft
+    # lightcraft
   ];
 
   services.tailscale.enable = true;
